@@ -1,0 +1,169 @@
+﻿@page "/"
+@using System.Xml;
+@using System.IO;
+@using System.Net.Http;
+
+<PageTitle>Chatbot</PageTitle>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-1">
+        </div>
+        <div class="col-md-6 col-sm-10">
+            <div class="messages">
+                @for (int i = 0; i < messages.Count; i++)
+                {
+                    @if (i % 2 == 0)
+                    {
+                        <div class="question">@messages[i]</div>
+                    }
+                    else
+                    {
+                        <div class="response">@messages[i]</div>
+                    }
+                }
+            </div>
+            <div class="textMessage">
+                <input @bind="message" placeholder="Ask me something.."/>
+                <button @onclick="SendMessage">Send</button>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-1">
+        </div>
+    </div>
+</div>
+
+@code{
+    //Method used when loading the page
+    public string message = "";
+    public string response = "";
+    public List<string> messages = new List<string>();
+    public static HttpClient Http = new HttpClient();
+
+    protected override async Task OnInitializedAsync()
+    {
+        messages = new List<string>();
+    }
+
+    public async Task SendMessage()
+    {
+        Http = new HttpClient();
+        messages.Add(message);
+        message = message.ToLower();
+
+        XmlDocument xmlDoc = new XmlDocument();
+        string XMLpath = Directory.GetCurrentDirectory() + @"/Data/Scenarios.xml";
+        xmlDoc.Load(XMLpath);
+
+        XmlNodeList List1 = xmlDoc.GetElementsByTagName("scenario");
+        XmlNodeList List2 = xmlDoc.GetElementsByTagName("type1");
+        XmlNodeList List3 = xmlDoc.GetElementsByTagName("type2");
+
+        bool scenario = false;
+        for (int i = 0; i < List1.Count; i++)
+        {
+            if (message.Contains(List1[i].Attributes["name"].Value.ToString().ToLower()))
+            {
+                scenario = true;
+            }
+        }
+
+        bool type1 = false;
+        for (int i = 0; i < List2.Count; i++)
+        {
+            if (message.Contains(List2[i].Attributes["name"].Value.ToString().ToLower()))
+            {
+                type1 = true;
+            }
+        }
+
+        bool type2 = false;
+        for (int i = 0; i < List3.Count; i++)
+        {
+            if (message.Contains(List3[i].Attributes["name"].Value.ToString().ToLower()))
+            {
+                type2 = true;
+            }
+        }
+
+        if (scenario)
+        {
+            for (int i = 0; i < List1.Count; i++)
+            {
+                if (message.Contains(List1[i].Attributes["name"].Value.ToString().ToLower()))
+                {
+                    string sc = List1[i].Attributes["name"].Value.ToString();
+                    response = "What kind of " + sc + "? ";
+
+                    XmlNodeList List = List1[i].ChildNodes;
+                    for (int j = 0; j < List.Count; j++)
+                    {
+                        response = response + List[j].Attributes["name"].Value.ToString();
+
+                        if (j == List.Count - 2)
+                        {
+                            response += " or ";
+                        }
+                        else if (j != List.Count - 1)
+                        {
+                            response += ", ";
+                        }
+                    }
+                    messages.Add(response);
+                    StateHasChanged();
+                }
+            }
+        }
+
+        else if (type1)
+        {
+            for (int i = 0; i < List2.Count; i++)
+            {
+                if (message.Contains(List2[i].Attributes["name"].Value.ToString().ToLower()))
+                {
+                    response = "Choose one: ";
+
+                    XmlNodeList List = List2[i].ChildNodes;
+                    for (int j = 0; j < List.Count; j++)
+                    {
+                        response = response + List[j].Attributes["name"].Value.ToString();
+
+                        if (j == List.Count - 2)
+                        {
+                            response += " or ";
+                        }
+                        else if (j != List.Count - 1)
+                        {
+                            response += ", ";
+                        }
+                    }
+                    messages.Add(response);
+                    StateHasChanged();
+                }
+            }
+        }
+
+        else if (type2)
+        {
+            for (int i = 0; i < List3.Count; i++)
+            {
+                if (message.Contains(List3[i].Attributes["name"].Value.ToString().ToLower()))
+                {
+                    response = List3[i].InnerText.ToString();
+                    messages.Add(response);
+                    StateHasChanged();
+                }
+            }
+        }
+
+        else
+        {
+            response = "No information about this subject, sorry";
+            messages.Add(response);
+            StateHasChanged();
+        }
+        message = "";
+    }
+}
+
+

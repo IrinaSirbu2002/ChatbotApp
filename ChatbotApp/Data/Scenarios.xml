@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<scenarios>
+  <scenario name="books">
+        <type1 name="Non-fiction">
+                <type2 name="Tara Westover">"Educated" by Tara Westover is a powerful memoir that chronicles the author's journey from growing up in a strict, isolated household in rural Idaho to pursuing higher education against all odds.</type2>
+                <type2 name="Yuval Noah Harari">"Sapiens: A Brief History of Humankind" by Yuval Noah Harari offers a fascinating exploration of human history, from the emergence of Homo sapiens in Africa to the rise of complex societies and civilizations.</type2>
+                <type2 name="Mark Manson">"The Subtle Art of Not Giving a F*ck" by Mark Manson is a refreshing self-help book that challenges conventional wisdom and offers practical advice on how to prioritize what truly matters in life and let go of unimportant worries.</type2>
+        </type1>
+        <type1 name="SF">
+                <type2 name="Isaac Asimov">Isaac Asimov's science fiction books often delve into the complexities of artificial intelligence, robotics, and futuristic societies, offering compelling narratives that blend scientific accuracy with philosophical inquiry.</type2>
+                <type2 name="Arthur C. Clarke">Arthur C. Clarke's SF books are renowned for their visionary exploration of space travel, extraterrestrial life, and the evolution of humanity, captivating readers with their grand scope and scientific imagination.</type2>
+                <type2 name="Philip K. Dick">Philip K. Dick's SF books are characterized by their mind-bending narratives, exploring themes of identity, reality, and the nature of consciousness in worlds where technology blurs the line between the real and the surreal.</type2>
+        </type1>
+        <type1 name="Auto-Biographies">
+                <type2 name="Nelson Mandela">This auto-biography chronicles the life of Nelson Mandela, from his childhood in rural South Africa to his struggle against apartheid and his eventual presidency.</type2>
+                <type2 name="Anne Frank">Although technically not an auto-biography, this diary offers a firsthand account of Anne Frank's experiences hiding from the Nazis during World War II.</type2>
+                <type2 name="Michelle Obama">In this auto-biography, former First Lady Michelle Obama reflects on her upbringing in Chicago, her career as a lawyer and public servant, and her experiences in the White House.</type2>
+        </type1>
+  </scenario>
+  <scenario name="films">
+        <type1 name="Action">
+                <type2 name="Arnold Schwarzenegger">Arnold Schwarzenegger is renowned for his roles in iconic action films such as "Terminator 2: Judgment Day," where he portrayed the iconic cyborg assassin, and "Predator," where he battled an extraterrestrial creature in the jungle. Additionally, he cemented his action hero status with films like "Commando," "Total Recall," and "Conan the Barbarian," showcasing his larger-than-life presence and unmatched charisma on the big screen.</type2>
+                <type2 name="Sylvester Stallone">Sylvester Stallone is best known for his iconic roles in action-packed franchises like "Rocky" and "Rambo," embodying the spirit of the ultimate underdog fighter and resilient action hero.</type2>
+                <type2 name="Bruce Willis">Bruce Willis is renowned for his tough and charismatic portrayals in action films like the "Die Hard" series, where he plays the iconic character John McClane, known for his wit, courage, and ability to triumph against overwhelming odds.</type2>
+        </type1>
+        <type1 name="Romantic">
+                <type2 name="Hugh Grant">Hugh Grant is known for his charming and endearing performances in romantic comedies such as "Notting Hill," "Four Weddings and a Funeral," and "Love Actually".</type2>
+                <type2 name="Julia Roberts">Julia Roberts has captivated audiences with her charismatic and heartfelt portrayals in romantic films like "Pretty Woman," "Notting Hill," and "My Best Friend's Wedding".</type2>
+                <type2 name="Ryan Gosling">Ryan Gosling has showcased his versatility and charm in romantic films such as "The Notebook," "Crazy, Stupid, Love," and "La La Land," captivating audiences with his memorable performances and on-screen chemistry.</type2>
+        </type1>
+        <type1 name="Documentary">
+                <type2 name="War and conflict">War and conflict documentaries delve into the complexities of global conflicts, revealing the human stories behind the battles, the impact on civilians, and the broader geopolitical ramifications.</type2>
+                <type2 name="Scientific discoveries and exploration">Scientific discoveries and exploration documentaries showcase groundbreaking research, innovation, and exploration across various fields, offering insights into humanity's quest for knowledge, understanding, and discovery of the world and the universe beyond.</type2>
+                <type2 name="Social justice issues">Social justice documentaries shed light on pressing issues such as inequality, discrimination, human rights violations, and advocacy efforts aimed at fostering fairness, equity, and inclusivity in society. They amplify marginalized voices, raise awareness, and inspire action towards creating a more just and equitable world for all.</type2>
+        </type1>
+  </scenario>
+  <scenario name="TV Series">
+      <type1 name="Comedy">
+          <type2 name="Steve Carell">Certainly! Steve Carell starred in "The Office," a popular comedy TV series known for its mockumentary style and portrayal of the mundane yet hilarious lives of employees at the Dunder Mifflin paper company.</type2>
+          <type2 name="Jim Parsons">Jim Parsons is well-known for his role as Sheldon Cooper in "The Big Bang Theory," a comedy TV series centered around a group of socially awkward but brilliant physicists and their humorous interactions with each other and the world around them.</type2>
+          <type2 name="Jennifer Aniston">Jennifer Aniston gained fame for her role as Rachel Green in the iconic sitcom "Friends," which follows the lives, relationships, and comedic escapades of a group of six friends living in New York City.</type2>
+      </type1>
+      <type1 name="Crime">
+          <type2 name="Bryan Cranston">"Breaking Bad": Bryan Cranston stars as Walter White, a high school chemistry teacher turned methamphetamine manufacturer, in this critically acclaimed series about crime and moral descent.</type2>
+          <type2 name="Benedict Cumberbatch">"Sherlock": Benedict Cumberbatch portrays Sherlock Holmes, a brilliant and eccentric detective, while Martin Freeman plays his loyal companion Dr. John Watson, in this modern adaptation of Sir Arthur Conan Doyle's classic detective stories.</type2>
+          <type2 name="Matthew McConaughey">"True Detective": Matthew McConaughey and Woody Harrelson lead the cast as detectives Rust Cohle and Marty Hart, respectively, in this anthology crime series that follows complex investigations spanning multiple timelines.</type2>
+      </type1>
+      <type1 name="Docu-Series">
+          <type2 name="Historical Events">Historical events docu-series provide in-depth analysis and captivating storytelling of pivotal moments in history, offering viewers a deeper understanding of the events that shaped our world.</type2>
+          <type2 name="True Crime Cases">True Crime Cases docu-series delve into real-life criminal investigations, uncovering the intricacies of high-profile cases and providing viewers with gripping narratives that explore the complexities of the criminal justice system.</type2>
+          <type2 name="Natural Disasters">Natural Disasters docu-series offer viewers a compelling glimpse into the devastating impact of various natural phenomena, from earthquakes and hurricanes to tsunamis and wildfires, highlighting the resilience of affected communities and the efforts of scientists to understand and mitigate these catastrophic events.</type2>
+      </type1>
+  </scenario>
+  <scenario name="poetry">
+      <type1 name="Sonnet">
+          <type2 name="William Shakespeare">Shakespeare is perhaps the most famous sonneteer in the English language. He wrote a collection of 154 sonnets, which are revered for their exquisite language, emotional depth, and exploration of themes such as love, beauty, time, and mortality. His sonnets are often divided into two main sequences: the Fair Youth sonnets (1-126) and the Dark Lady sonnets (127-152).</type2>
+          <type2 name="Francesco Petrarca">Petrarch, an Italian poet of the 14th century, is credited with popularizing the sonnet form. He wrote over 300 sonnets in Italian, which became immensely influential in Renaissance literature. Petrarch's sonnets typically focus on unrequited love, idealized beauty, and the passage of time. His collection "Canzoniere" (or "Song Book") is one of the most celebrated works of Italian literature.</type2>
+          <type2 name="Elizabeth Barrett Browning">Browning was a prominent English poet of the Victorian era, known for her mastery of the sonnet form. Her collection "Sonnets from the Portuguese" (1850) consists of 44 sonnets, which explore themes of love, faith, and the role of the poet. One of her most famous sonnets, Sonnet 43 ("How do I love thee? Let me count the ways"), is widely anthologized and admired for its emotional intensity and lyricism.</type2>
+      </type1>
+      <type1 name="Haiku">
+          <type2 name="Matsuo Basho">Bashō is considered one of the greatest masters of haiku in Japanese literature. He lived in the 17th century and is renowned for his profound and evocative nature poetry. Bashō's haiku often capture fleeting moments in nature with simplicity and depth, revealing insights into the human condition.</type2>
+          <type2 name="Yosa Buson">Buson was a Japanese poet and painter who lived during the Edo period. He is celebrated for his mastery of haiku and his ability to evoke vivid imagery through concise language. Buson's haiku often combine elements of nature with human experiences, creating rich and layered compositions that resonate with readers.</type2>
+          <type2 name="Kobayashi Issa">Issa, also known as Issa Kobayashi, was a prolific Japanese poet who lived in the 18th and 19th centuries. He is admired for his compassionate and empathetic approach to haiku, which often reflect the struggles and joys of everyday life. Issa's haiku frequently feature animals and insects, highlighting the interconnectedness of all living beings.</type2>
+      </type1>
+  </scenario>
+  <scenario name="painting">
+      <type1 name="Renaissance">
+          <type2 name="Leonardo da Vinci">Leonardo da Vinci was a polymath and one of the most iconic figures of the Renaissance. He was not only a painter but also a scientist, engineer, and inventor. Leonardo's masterpieces include the "Mona Lisa" and "The Last Supper," both of which showcase his mastery of technique, composition, and perspective.</type2>
+          <type2 name="Michelangelo Buonarroti">Michelangelo was a sculptor, painter, architect, and poet whose work epitomizes the ideals of the High Renaissance. His most famous works include the ceiling of the Sistine Chapel, a masterpiece of fresco painting that depicts scenes from Genesis, and the marble sculpture "David," a symbol of Renaissance humanism.</type2>
+          <type2 name="Raphael Sanzio">Raphael, often simply referred to as Raphael, was an Italian painter and architect known for his graceful compositions and idealized figures. His works, such as "The School of Athens" and "The Madonna of the Meadow," exemplify the harmonious balance and beauty characteristic of High Renaissance art.</type2>
+      </type1>
+      <type1 name="Abstract">
+          <type2 name="Wassily Kandinsky">Wassily Kandinsky was a Russian painter and art theorist who is often credited with creating the first purely abstract paintings. He believed that colors and shapes could evoke emotions and spiritual experiences without representing recognizable objects.</type2>
+          <type2 name="Piet Mondrian">Piet Mondrian was a Dutch painter and one of the pioneers of abstract art. He was a leading figure in the De Stijl movement, which emphasized geometric shapes and primary colors. Mondrian's iconic compositions, such as "Composition with Red, Blue, and Yellow" and "Broadway Boogie Woogie," feature grids of intersecting lines and blocks of color arranged in a balanced and harmonious manner.</type2>
+      </type1>
+      <type1 name="Expressionism">
+          <type2 name="Edvard Munch">Edvard Munch was a Norwegian painter and printmaker whose work is often associated with the Symbolist and Expressionist movements. His most famous painting, "The Scream," is an iconic representation of existential angst and inner turmoil. Munch's art frequently explored themes of love, death, anxiety, and human psychology, conveyed through vivid colors, swirling lines, and haunting imagery.</type2>
+          <type2 name="Egon Schiele">Egon Schiele was an Austrian painter known for his intense and provocative figurative works. His style was characterized by contorted and elongated figures, often depicted in vulnerable or erotic poses. Schiele's art delved into themes of sexuality, mortality, and the human condition, reflecting his own tumultuous life and experiences.</type2>
+      </type1>
+  </scenario>
+</scenarios>
