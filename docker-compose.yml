@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  chatbotapp:
+    image: ${DOCKER_REGISTRY-}chatbotapp
+    build:
+      context: .
+      dockerfile: ChatbotApp/Dockerfile
